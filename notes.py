@@ -9,16 +9,18 @@ secili = random.choice(cumleler)                                 # .choice() ver
 
 print(secili.strip())                                            # .strip() baş ve sondaki gereksiz karakterleri siler (örn. /n)
 
-
-
 #.txt dosyasındaki satırların aralarına boşluk bırakırsan, 15 dk mal gibi niye boş sonuç dönüyor diye hata ararsın.
 
+#_________________________________________
 
 
+import random, string
 
+uzunluk = int(input("şifre uzunluğu: "))
+karakter = string.ascii_letters + string.digits + string.punctution
+sifre = ''.join(random.choice(karakterler) for _ in range(uzunluk))
 
-
-
+print("oluşturulan şifre:", sifre)
 
 
 
