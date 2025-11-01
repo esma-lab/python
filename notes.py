@@ -16,8 +16,13 @@ print(secili.strip())                                            # .strip() baş
 
 import random, string
 
+#şifre uzunluğu alır
 uzunluk = int(input("şifre uzunluğu: "))
+
+#kullanılacak karekterler
 karakter = string.ascii_letters + string.digits + string.punctution
+
+#uzunluk kadar karışık seçim yapılır
 sifre = ''.join(random.choice(karakterler) for _ in range(uzunluk))
 
 print("oluşturulan şifre:", sifre)
