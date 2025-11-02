@@ -28,7 +28,25 @@ sifre = ''.join(random.choice(karakterler) for _ in range(uzunluk))
 print("oluşturulan şifre:", sifre)
 
 
+#__________________________________________
 
+
+import random
+
+sayilar = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+#bilgisayarın secimi
+sayi = random.choice(sayilar)
+
+#kullanıcının secimi
+while True:
+    secim = int(input("bir sayı seçiniz; "))  #while ile sayı bulunana kadar sonsuz döngü
+
+    if secim == sayi:
+        print("tebrikler, doğru tahmin!")
+        break                                 #sayi bulununca döngüden cikis
+    else:
+        print("yanlış seçim, tekrar deneyin.")
 
 
 
