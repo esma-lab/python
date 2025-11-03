@@ -49,5 +49,27 @@ while True:
         print("yanlış seçim, tekrar deneyin.")
 
 
+#__________________________________________
+
+
+import random
+
+zarlar = {1:0, 2:0, 3:0, 4:0, 5:0, 6:0}           #sözlük, anahtar değeri 0
+
+for i in range(1000000):                          #bir milyon kere döndür
+    zar = random.randint(1,6)                     #1,6 dahil rastgele tam sayı secer
+    zarlar[zar] +=1                               #anahtarın her seferinde sayısı artar
+
+for zar in zarlar:                                #sonucu yazdırır (tam anlamadım, sonra bakarız inş)
+    print(f"{zar} gelme olasılığı: {zarlar[zar] / 1000000}")
+
+
+
+
+
+
+
+
+
 
 
